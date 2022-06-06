@@ -4,15 +4,15 @@
 #include <WiFiClientSecure.h>
 #include "cert.h"
 
-const char * ssid = "home_wifi";
-const char * password = "helloworld";
-
+const char * ssid = "OPPO A83";
+const char * password = "12345678";
+#define LED_BUILTIN 2
 
 String FirmwareVer = {
   "2.2"
 };
-#define URL_fw_Version "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/bin_version.txt"
-#define URL_fw_Bin "https://raw.githubusercontent.com/programmer131/ESP8266_ESP32_SelfUpdate/master/esp32_ota/fw.bin"
+#define URL_fw_Version "https://github.com/Thanachaiman/OTA/blob/main/bin_version.txt"
+#define URL_fw_Bin "https://github.com/Thanachaiman/OTA/blob/main/fw.bin"
 
 //#define URL_fw_Version "http://cade-make.000webhostapp.com/version.txt"
 //#define URL_fw_Bin "http://cade-make.000webhostapp.com/firmware.bin"
