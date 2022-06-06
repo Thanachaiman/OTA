@@ -9,10 +9,10 @@ const char * password = "12345678";
 #define LED_BUILTIN 2
 
 String FirmwareVer = {
-  "2.4"
+  "2.5"
 };
-#define URL_fw_Version "https://github.com/Thanachaiman/OTA/blob/main/bin_version.txt"
-#define URL_fw_Bin "https://github.com/Thanachaiman/OTA/blob/main/fw.bin"
+#define URL_fw_Version "https://raw.githubusercontent.com/Thanachaiman/OTA/main/bin_version.txt"
+#define URL_fw_Bin "https://raw.githubusercontent.com/Thanachaiman/OTA/main/fw.bin"
 
 //#define URL_fw_Version "http://cade-make.000webhostapp.com/version.txt"
 //#define URL_fw_Bin "http://cade-make.000webhostapp.com/firmware.bin"
@@ -151,6 +151,7 @@ int FirmwareVersionCheck(void) {
       // start connection and send HTTP header
       delay(100);
       httpCode = https.GET();
+      Serial.println(httpCode);
       delay(100);
       if (httpCode == HTTP_CODE_OK) // if version received
       {
