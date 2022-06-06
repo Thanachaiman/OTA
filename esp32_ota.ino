@@ -9,7 +9,7 @@ const char * password = "12345678";
 #define LED_BUILTIN 2
 
 String FirmwareVer = {
-  "2.3"
+  "2.4"
 };
 #define URL_fw_Version "https://github.com/Thanachaiman/OTA/blob/main/bin_version.txt"
 #define URL_fw_Bin "https://github.com/Thanachaiman/OTA/blob/main/fw.bin"
